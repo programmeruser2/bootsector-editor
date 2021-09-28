@@ -1,0 +1,20 @@
+{
+  "name": "bootsector-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "replitdb-client": "^2.1.0",
+    "s1db": "0.0.3",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="/static/css/editor.css" type="text/css"/>
+	<script src="/static/vendor/v86/build/libv86.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="/static/js/editor.js" defer></script>
+</head>
+<body>
+	<div id="editor"><%= code %></div>
+	<div id="run-container">
+		<div id="buttons">
+			<button id="build">Build</button>
+			<button id="build-run">Build and Run</button>
+			<button id="run">Run</button>
+			<button id="stop">Stop</button>
+			<button id="save">Save</button>
+		</div>
+		<div id="emulator-container">
+			<div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+			<canvas style="display: none"></canvas>
+		</div>
+	</div>
+</body>
